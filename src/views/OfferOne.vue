@@ -2,19 +2,19 @@
   <div>
     <Header />
     <main class="main">
-      <Calculate />
     </main>
+    <OfferOne />
     <Footer />
   </div>
 </template>
 <script>
 import Header from '@/components/Header'
 import Footer from "@/components/Footer";
-import Calculate from "@/components/Calculate";
+import OfferOne from "@/components/OfferOne";
 export default {
   name: 'app',
   components: {
-    Calculate,
+    OfferOne,
     Footer,
     Header
   }

@@ -31,5 +31,81 @@ export default new Router({
       path: '/amortgage',
       component: () => import('./views/Amortgage.vue')
     },
+    {
+      path: '/register',
+      component: () => import('./views/Register.vue')
+    },
+    {
+      path: '/login',
+      component: () => import('./views/Login.vue')
+    },
+    {
+      path: '/request',
+      component: () => import('./views/Request.vue')
+    },
+    {
+      path: '/interest',
+      component: () => import('./views/Interest.vue')
+    },
+    {
+      path: '/documents',
+      component: () => import('./views/Documents.vue')
+    },
+    {
+      path: '/review',
+      component: () => import('./views/Review.vue')
+    },
+    {
+      path: '/verification',
+      component: () => import('./views/Verification.vue')
+    },
+    {
+      path: '/video',
+      component: () => import('./views/Video.vue')
+    },
+    {
+      path: '/video-two',
+      component: () => import('./views/VideoTwo.vue')
+    },
+    {
+      path: '/offer-one',
+      component: () => import('./views/OfferOne.vue')
+    },
+    {
+      path: '/offer-two',
+      component: () => import('./views/OfferTwo.vue')
+    },
+    {
+      path: '/signed',
+      component: () => import('./views/Signed.vue')
+    },
+    {
+      path: '/my-mortgages',
+      component: () => import('./views/MyMortgages.vue')
+    },
+    {
+      path: '/details',
+      component: () => import('./views/Details.vue')
+    },
+    {
+      path: '/admin-login',
+      component: () => import('./views/AdminLogin.vue')
+    },
+    {
+      path: '/ap-users',
+      component: () => import('./views/ApUsers.vue')
+    },
+    {
+      path: '/ap-mortgages',
+      component: () => import('./views/ApMortgages.vue')
+    },
+    {
+      path: '/ap-documents',
+      component: () => import('./views/ApDocuments.vue')
+    },
+    {
+      path: '/ap-panel',
+      component: () => import('./views/ApPanel.vue')
+    },
   ]
 })

@@ -8,8 +8,11 @@
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dolor nisi, posuere vitae tincidunt et, molestie sit amet purus. Doloremque et molestiae perspiciatis quis voluptas ut sed. Omnis praesentium doloremque ipsa eveniet.
         </p>
-        <div class="profit-btn">
-          Mortgage estimate
+        <div class="profit__btn">
+          <span>
+            Mortgage estimate
+          </span>
+          <div class="profit__btn-bg"></div>
         </div>
       </div>
       <div class="profit__img">
@@ -44,18 +47,36 @@
         line-height: 26px
         color: #102941
         margin: 16px 0 24px
-      .profit-btn
-        background: #29ABE2
+      .profit__btn
         margin-right: auto
-        border-radius: 10px
-        font-family: Open Sans, sans-serif
-        font-style: normal
-        font-weight: bold
-        font-size: 18px
         cursor: pointer
-        line-height: 25px
-        color: #FFFFFF
-        padding: 17.5px 40px
+        display: flex
+        position: relative
+        span
+          background: #29ABE2
+          border-radius: 10px
+          font-family: Open Sans, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 18px
+          cursor: pointer
+          line-height: 25px
+          color: #FFFFFF
+          padding: 17.5px 40px
+          position: relative
+          z-index: 2
+        .profit__btn-bg
+          width: 211px
+          pointer-events: none
+          height: 100%
+          left: 50%
+          transform: translateX(-50%)
+          position: absolute
+          bottom: -25px
+          z-index: 1
+          background: rgba(95, 122, 126, 0.22)
+          filter: blur(54px)
+          border-radius: 10px
     .profit__img
       width: 43.8%
       img

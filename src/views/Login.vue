@@ -2,7 +2,7 @@
   <div>
     <Header />
     <main class="main">
-      <Calculate />
+      <Login />
     </main>
     <Footer />
   </div>
@@ -10,11 +10,13 @@
 <script>
 import Header from '@/components/Header'
 import Footer from "@/components/Footer";
-import Calculate from "@/components/Calculate";
+import Register from "@/components/Register";
+import Login from "@/components/Login";
 export default {
   name: 'app',
   components: {
-    Calculate,
+    Login,
+    Register,
     Footer,
     Header
   }

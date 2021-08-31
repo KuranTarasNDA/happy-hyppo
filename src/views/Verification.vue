@@ -2,7 +2,7 @@
   <div>
     <Header />
     <main class="main">
-      <Calculate />
+      <Verification />
     </main>
     <Footer />
   </div>
@@ -10,11 +10,11 @@
 <script>
 import Header from '@/components/Header'
 import Footer from "@/components/Footer";
-import Calculate from "@/components/Calculate";
+import Verification from "@/components/Verification";
 export default {
   name: 'app',
   components: {
-    Calculate,
+    Verification,
     Footer,
     Header
   }

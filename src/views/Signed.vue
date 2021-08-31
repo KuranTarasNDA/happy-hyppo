@@ -2,7 +2,7 @@
   <div>
     <Header />
     <main class="main">
-      <Calculate />
+      <Signed />
     </main>
     <Footer />
   </div>
@@ -10,11 +10,11 @@
 <script>
 import Header from '@/components/Header'
 import Footer from "@/components/Footer";
-import Calculate from "@/components/Calculate";
+import Signed from "@/components/Signed";
 export default {
   name: 'app',
   components: {
-    Calculate,
+    Signed,
     Footer,
     Header
   }

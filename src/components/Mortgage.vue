@@ -75,6 +75,7 @@
 <style lang="sass">
 .mortgage
   padding-bottom: 104px
+  padding-top: 40px
   .container
     flex-direction: column
     h1

@@ -22,12 +22,18 @@
         </router-link>
       </div>
       <div class="header__buttons">
-        <div class="header-button">
-          Sign Up
-        </div>
-        <div class="header-button">
-          Log in
-        </div>
+        <router-link to="/register" class="header__button">
+          <span>
+            Sign Up
+          </span>
+          <div class="header__button-bg"></div>
+        </router-link>
+        <router-link to="/login" class="header__button">
+          <span>
+            Log in
+          </span>
+          <div class="header__button-bg"></div>
+        </router-link>
       </div>
     </div>
   </header>
@@ -35,6 +41,9 @@
 
 <style lang="sass">
   .header
+    background: #FFFFFF
+    position: relative
+    z-index: 5
     .container
       align-items: center
       justify-content: space-between
@@ -62,19 +71,38 @@
             background: #8CC5F9
     .header__buttons
       display: flex
-      .header-button
-        background: #29ABE2
-        border-radius: 10px
-        cursor: pointer
-        font-family: Open Sans, sans-serif
-        font-style: normal
-        font-weight: bold
-        font-size: 18px
-        line-height: 25px
-        color: #FFFFFF
-        padding: 20px 30px
+      .header__button
+        display: flex
+        position: relative
         &:not(:last-child)
           margin-right: 32px
+        span
+          background: #29ABE2
+          border-radius: 10px
+          cursor: pointer
+          font-family: Open Sans, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 18px
+          line-height: 25px
+          color: #FFFFFF
+          padding: 20px 0
+          width: 134px
+          text-align: center
+          position: relative
+          z-index: 2
+        .header__button-bg
+          width: 94px
+          pointer-events: none
+          height: 47px
+          left: 50%
+          transform: translateX(-50%)
+          position: absolute
+          bottom: -3px
+          z-index: 1
+          background: rgba(95, 122, 126, 0.22)
+          filter: blur(54px)
+          border-radius: 10px
 </style>
 
 

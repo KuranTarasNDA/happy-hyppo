@@ -2,7 +2,7 @@
   <div>
     <Header />
     <main class="main">
-      <Calculate />
+      <my-mortgages />
     </main>
     <Footer />
   </div>
@@ -10,11 +10,11 @@
 <script>
 import Header from '@/components/Header'
 import Footer from "@/components/Footer";
-import Calculate from "@/components/Calculate";
+import MyMortgages from "@/components/MyMortgages";
 export default {
   name: 'app',
   components: {
-    Calculate,
+    MyMortgages,
     Footer,
     Header
   }

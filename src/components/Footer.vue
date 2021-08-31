@@ -16,7 +16,10 @@
             </p>
           </div>
           <div class="footer__top-btn">
-            Contact us
+            <span>
+              Contact us
+            </span>
+            <div class="footer__top-btn-bg"></div>
           </div>
         </div>
       </div>
@@ -137,17 +140,34 @@
             color: #102941
             margin-top: 16px
         .footer__top-btn
-          background: #29ABE2
-          border-radius: 10px
-          font-family: Rubik, sans-serif
-          font-style: normal
-          font-weight: bold
-          font-size: 16px
-          line-height: 25px
-          color: #FFFFFF
-          padding: 17.5px 81px
           margin-left: auto
-          cursor: pointer
+          position: relative
+          display: flex
+          span
+            background: #29ABE2
+            border-radius: 10px
+            font-family: Rubik, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 25px
+            color: #FFFFFF
+            padding: 17.5px 81px
+            cursor: pointer
+            position: relative
+            z-index: 2
+          .footer__top-btn-bg
+            width: 211px
+            pointer-events: none
+            height: 100%
+            left: 50%
+            transform: translateX(-50%)
+            position: absolute
+            bottom: -25px
+            z-index: 1
+            background: rgba(95, 122, 126, 0.22)
+            filter: blur(54px)
+            border-radius: 10px
     .footer__bot
       display: flex
       margin-top: 48px

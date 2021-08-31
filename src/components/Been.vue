@@ -45,8 +45,11 @@
             </span>
           </li>
         </ul>
-        <div class="been-btn">
-          Read more
+        <div class="been__btn">
+          <span>
+            Read more
+          </span>
+          <div class="been__btn-bg"></div>
         </div>
       </div>
     </div>
@@ -101,17 +104,36 @@
             line-height: 26px
             color: #102941
             margin-left: 10px
-      .been-btn
-        background: #29ABE2
-        border-radius: 10px
-        font-family: Open Sans, sans-serif
-        font-style: normal
-        font-weight: bold
-        font-size: 18px
-        line-height: 25px
-        color: #FFFFFF
-        padding: 17.5px 70px
+      .been__btn
+        display: flex
+        position: relative
         margin-right: auto
+        cursor: pointer
+        span
+          background: #29ABE2
+          border-radius: 10px
+          font-family: Open Sans, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 18px
+          line-height: 25px
+          color: #FFFFFF
+          padding: 17.5px 70px
+          margin-right: auto
+          position: relative
+          z-index: 2
+        .been__btn-bg
+          width: 211px
+          pointer-events: none
+          height: 100%
+          left: 50%
+          transform: translateX(-50%)
+          position: absolute
+          bottom: -25px
+          z-index: 1
+          background: rgba(95, 122, 126, 0.22)
+          filter: blur(54px)
+          border-radius: 10px
 </style>
 
 

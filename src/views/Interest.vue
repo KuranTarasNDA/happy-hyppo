@@ -2,7 +2,7 @@
   <div>
     <Header />
     <main class="main">
-      <Calculate />
+      <Interest />
     </main>
     <Footer />
   </div>
@@ -10,11 +10,11 @@
 <script>
 import Header from '@/components/Header'
 import Footer from "@/components/Footer";
-import Calculate from "@/components/Calculate";
+import Interest from "@/components/Interest";
 export default {
   name: 'app',
   components: {
-    Calculate,
+    Interest,
     Footer,
     Header
   }

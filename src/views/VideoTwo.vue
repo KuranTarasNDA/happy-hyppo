@@ -2,7 +2,7 @@
   <div>
     <Header />
     <main class="main">
-      <Calculate />
+      <VideoTwo />
     </main>
     <Footer />
   </div>
@@ -10,11 +10,11 @@
 <script>
 import Header from '@/components/Header'
 import Footer from "@/components/Footer";
-import Calculate from "@/components/Calculate";
+import VideoTwo from "@/components/VideoTwo";
 export default {
   name: 'app',
   components: {
-    Calculate,
+    VideoTwo,
     Footer,
     Header
   }
