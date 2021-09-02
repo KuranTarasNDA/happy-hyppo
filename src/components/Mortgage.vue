@@ -141,9 +141,11 @@
               color: #FFFFFF
               z-index: 2
               border-radius: 10px
-              padding: 17.5px 61px 17.5px 91px
+              text-align: center
+              padding: 17.5px
               background: #29ABE2
               position: relative
+              width: 250px
             .mortgage-btn-bg
               position: absolute
               width: 211px
