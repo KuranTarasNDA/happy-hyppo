@@ -15,7 +15,7 @@
       <div class="faq__questions">
         <div class="faq__item">
           <div class="faq__item-cont">
-            <div class="faq__item-top">
+            <div v-on:click="faq" class="faq__item-top">
               <div class="faq__item-img">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17 1V33" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -161,7 +161,6 @@
     </div>
   </section>
 </template>
-
 <style lang="sass">
 .faq
   padding-bottom: 67px
@@ -215,6 +214,7 @@
     .faq__questions
       .faq__item
         position: relative
+
         &:not(:last-child)
           margin-bottom: 56px
         .faq__item-cont
@@ -224,6 +224,7 @@
           border-radius: 24px
           .faq__item-top
             display: flex
+            cursor: pointer
             padding: 24px
             align-items: center
             .faq__item-img
@@ -273,10 +274,20 @@
           left: 0
           bottom: -8px
           transition-duration: 0.4s
+      .faq_active
+        .faq__item-cont
+          .faq__item-bot
+            display: flex
 </style>
-
 <script>
-
+export default {
+  name: 'vue',
+  methods: {
+    faq: function () {
+      document.querySelector('.faq__item').classList.toggle('faq_active')
+    }
+  }
+}
 </script>
 
 

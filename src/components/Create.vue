@@ -34,7 +34,7 @@
           </div>
         </div>
         <div class="edit__form-buttons">
-          <div class="edit-form-cancel">
+          <div @click="closeCreate" class="edit-form-cancel">
             Cancel
           </div>
           <input class="edit-form-save" value="Create">
@@ -143,6 +143,16 @@
 .create_active
   display: block
 </style>
+<script>
+export default {
+  name: 'app',
+  methods: {
+    closeCreate: function (event) {
+      document.querySelector('.create').style.display = 'none'
+    }
+  }
+}
+</script>
 
 
 

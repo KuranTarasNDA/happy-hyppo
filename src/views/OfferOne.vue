@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <HeaderLog />
     <main class="main">
     </main>
     <OfferOne />
@@ -8,15 +8,15 @@
   </div>
 </template>
 <script>
-import Header from '@/components/Header'
 import Footer from "@/components/Footer";
 import OfferOne from "@/components/OfferOne";
+import HeaderLog from "@/components/HeaderLog";
 export default {
   name: 'app',
   components: {
+    HeaderLog,
     OfferOne,
     Footer,
-    Header
   }
 }
 </script>

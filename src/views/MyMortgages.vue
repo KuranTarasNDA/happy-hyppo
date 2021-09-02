@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <HeaderLog />
     <main class="main">
       <my-mortgages />
     </main>
@@ -8,15 +8,15 @@
   </div>
 </template>
 <script>
-import Header from '@/components/Header'
 import Footer from "@/components/Footer";
 import MyMortgages from "@/components/MyMortgages";
+import HeaderLog from "@/components/HeaderLog";
 export default {
   name: 'app',
   components: {
+    HeaderLog,
     MyMortgages,
     Footer,
-    Header
   }
 }
 </script>

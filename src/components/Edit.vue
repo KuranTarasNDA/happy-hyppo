@@ -34,7 +34,7 @@
           </div>
         </div>
         <div class="edit__form-buttons">
-          <div class="edit-form-cancel">
+          <div @click="closeEdit" class="edit-form-cancel">
             Cancel
           </div>
           <input class="edit-form-save" value="Save">
@@ -143,7 +143,16 @@
 .edit_active
   display: block
 </style>
-
+<script>
+export default {
+  name: 'app',
+  methods: {
+    closeEdit: function (event) {
+      document.querySelector('.edit').style.display = 'none'
+    }
+  }
+}
+</script>
 
 
 

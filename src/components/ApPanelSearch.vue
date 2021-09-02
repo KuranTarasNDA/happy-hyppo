@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="search__item">
-        <div @click="openCreateFunction" class="search__item-btn">
+        <div @click="openCreate" class="search__item-btn">
           Create new user
         </div>
       </div>
@@ -133,17 +133,14 @@
         cursor: pointer
 </style>
 <script>
-var openCreate = new Vue({
-  data: {
-    name: 'Vue.js'
-  },
-  // define methods under the `methods` object
+export default {
+  name: 'app',
   methods: {
-    openCreateFunction: function (event) {
-      alert('')
+    openCreate: function (event) {
+      document.querySelector('.create').style.display = 'block'
     }
   }
-})
+}
 </script>
 
 

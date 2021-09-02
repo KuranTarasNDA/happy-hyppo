@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <HeaderLog />
     <main class="main">
       <Video />
     </main>
@@ -8,15 +8,15 @@
   </div>
 </template>
 <script>
-import Header from '@/components/Header'
 import Footer from "@/components/Footer";
 import Video from "@/components/Video";
+import HeaderLog from "@/components/HeaderLog";
 export default {
   name: 'app',
   components: {
+    HeaderLog,
     Video,
     Footer,
-    Header
   }
 }
 </script>

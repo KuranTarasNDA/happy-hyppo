@@ -21,7 +21,6 @@
 </template>
 <style lang="sass">
 .partners
-  padding-bottom: 64px
   background: #fbfbfb
   .container
     max-width: 1135px

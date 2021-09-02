@@ -107,5 +107,21 @@ export default new Router({
       path: '/ap-panel',
       component: () => import('./views/ApPanel.vue')
     },
+    {
+      path: '/user-page',
+      component: () => import('./views/UserPage.vue')
+    },
+    {
+      path: '/ap-documents-verification',
+      component: () => import('./views/ApDocumentsVerification.vue')
+    },
+    {
+      path: '/ap-mortgage-page',
+      component: () => import('./views/ApMortgagePage.vue')
+    },
+    {
+      path: '/preferences',
+      component: () => import('./views/Preferences.vue')
+    },
   ]
 })

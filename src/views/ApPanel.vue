@@ -26,7 +26,7 @@ export default {
     ApPanel,
     Nav,
     ApHeader
+  },
 
-  }
 }
 </script>

@@ -40,7 +40,7 @@
               modelling admin
             </span>
             <div class="row__buttons">
-              <div class="row__btn">
+              <div v-on:click="openEdit" class="row__btn">
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.5 7H6.5C5.96957 7 5.46086 7.21071 5.08579 7.58579C4.71071 7.96086 4.5 8.46957 4.5 9V18C4.5 18.5304 4.71071 19.0391 5.08579 19.4142C5.46086 19.7893 5.96957 20 6.5 20H15.5C16.0304 20 16.5391 19.7893 16.9142 19.4142C17.2893 19.0391 17.5 18.5304 17.5 18V15" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M9.5 15H12.5L21 6.5C21.3978 6.10217 21.6213 5.56261 21.6213 5C21.6213 4.43739 21.3978 3.89782 21 3.5C20.6022 3.10217 20.0626 2.87868 19.5 2.87868C18.9374 2.87868 18.3978 3.10217 18 3.5L9.5 12V15Z" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -69,7 +69,7 @@
               modelling admin
             </span>
             <div class="row__buttons">
-              <div class="row__btn">
+              <div v-on:click="openEdit" class="row__btn">
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.5 7H6.5C5.96957 7 5.46086 7.21071 5.08579 7.58579C4.71071 7.96086 4.5 8.46957 4.5 9V18C4.5 18.5304 4.71071 19.0391 5.08579 19.4142C5.46086 19.7893 5.96957 20 6.5 20H15.5C16.0304 20 16.5391 19.7893 16.9142 19.4142C17.2893 19.0391 17.5 18.5304 17.5 18V15" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M9.5 15H12.5L21 6.5C21.3978 6.10217 21.6213 5.56261 21.6213 5C21.6213 4.43739 21.3978 3.89782 21 3.5C20.6022 3.10217 20.0626 2.87868 19.5 2.87868C18.9374 2.87868 18.3978 3.10217 18 3.5L9.5 12V15Z" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -98,7 +98,7 @@
               modelling admin
             </span>
             <div class="row__buttons">
-              <div class="row__btn">
+              <div v-on:click="openEdit" class="row__btn">
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.5 7H6.5C5.96957 7 5.46086 7.21071 5.08579 7.58579C4.71071 7.96086 4.5 8.46957 4.5 9V18C4.5 18.5304 4.71071 19.0391 5.08579 19.4142C5.46086 19.7893 5.96957 20 6.5 20H15.5C16.0304 20 16.5391 19.7893 16.9142 19.4142C17.2893 19.0391 17.5 18.5304 17.5 18V15" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M9.5 15H12.5L21 6.5C21.3978 6.10217 21.6213 5.56261 21.6213 5C21.6213 4.43739 21.3978 3.89782 21 3.5C20.6022 3.10217 20.0626 2.87868 19.5 2.87868C18.9374 2.87868 18.3978 3.10217 18 3.5L9.5 12V15Z" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -127,7 +127,7 @@
               modelling admin
             </span>
             <div class="row__buttons">
-              <div class="row__btn">
+              <div v-on:click="openEdit" class="row__btn">
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.5 7H6.5C5.96957 7 5.46086 7.21071 5.08579 7.58579C4.71071 7.96086 4.5 8.46957 4.5 9V18C4.5 18.5304 4.71071 19.0391 5.08579 19.4142C5.46086 19.7893 5.96957 20 6.5 20H15.5C16.0304 20 16.5391 19.7893 16.9142 19.4142C17.2893 19.0391 17.5 18.5304 17.5 18V15" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M9.5 15H12.5L21 6.5C21.3978 6.10217 21.6213 5.56261 21.6213 5C21.6213 4.43739 21.3978 3.89782 21 3.5C20.6022 3.10217 20.0626 2.87868 19.5 2.87868C18.9374 2.87868 18.3978 3.10217 18 3.5L9.5 12V15Z" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -156,7 +156,7 @@
               modelling admin
             </span>
             <div class="row__buttons">
-              <div class="row__btn">
+              <div v-on:click="openEdit" class="row__btn">
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.5 7H6.5C5.96957 7 5.46086 7.21071 5.08579 7.58579C4.71071 7.96086 4.5 8.46957 4.5 9V18C4.5 18.5304 4.71071 19.0391 5.08579 19.4142C5.46086 19.7893 5.96957 20 6.5 20H15.5C16.0304 20 16.5391 19.7893 16.9142 19.4142C17.2893 19.0391 17.5 18.5304 17.5 18V15" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M9.5 15H12.5L21 6.5C21.3978 6.10217 21.6213 5.56261 21.6213 5C21.6213 4.43739 21.3978 3.89782 21 3.5C20.6022 3.10217 20.0626 2.87868 19.5 2.87868C18.9374 2.87868 18.3978 3.10217 18 3.5L9.5 12V15Z" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -205,3 +205,13 @@
               &:not(:last-child)
                 margin-right: 12px
 </style>
+<script>
+export default {
+  name: 'app',
+  methods: {
+    openEdit: function (event) {
+      document.querySelector('.edit').style.display = 'block'
+    }
+  }
+}
+</script>
