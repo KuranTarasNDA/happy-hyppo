@@ -15,7 +15,7 @@
       <div class="faq__questions">
         <div class="faq__item">
           <div class="faq__item-cont">
-            <div v-on:click="faq" class="faq__item-top">
+            <div v-on:click="faq($event)" class="faq__item-top">
               <div class="faq__item-img">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17 1V33" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -39,7 +39,7 @@
         </div>
         <div class="faq__item">
           <div class="faq__item-cont">
-            <div class="faq__item-top">
+            <div v-on:click="faq($event)" class="faq__item-top">
               <div class="faq__item-img">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17 1V33" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -63,7 +63,7 @@
         </div>
         <div class="faq__item">
           <div class="faq__item-cont">
-            <div class="faq__item-top">
+            <div v-on:click="faq($event)" class="faq__item-top">
               <div class="faq__item-img">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17 1V33" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -87,7 +87,7 @@
         </div>
         <div class="faq__item">
           <div class="faq__item-cont">
-            <div class="faq__item-top">
+            <div v-on:click="faq($event)" class="faq__item-top">
               <div class="faq__item-img">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17 1V33" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -111,7 +111,7 @@
         </div>
         <div class="faq__item">
           <div class="faq__item-cont">
-            <div class="faq__item-top">
+            <div v-on:click="faq($event)" class="faq__item-top">
               <div class="faq__item-img">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17 1V33" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -135,7 +135,7 @@
         </div>
         <div class="faq__item">
           <div class="faq__item-cont">
-            <div class="faq__item-top">
+            <div v-on:click="faq($event)" class="faq__item-top">
               <div class="faq__item-img">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17 1V33" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -283,8 +283,8 @@
 export default {
   name: 'vue',
   methods: {
-    faq: function () {
-      document.querySelector('.faq__item').classList.toggle('faq_active')
+    faq: function (e) {
+      e.target.closest('.faq__item').classList.toggle('faq_active')
     }
   }
 }
